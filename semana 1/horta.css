@@ -1,0 +1,16 @@
+body{
+    background-color: rgb(144, 241, 122);
+    font-family: "poppins", sans-serif ;
+    margin: 20px;
+}
+
+h1{
+     color: rgb(17, 96, 1); 
+     background-color: rgb(120, 160, 45);
+
+}
+
+p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+}
