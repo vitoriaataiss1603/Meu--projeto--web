@@ -1,0 +1,14 @@
+body{
+    background-color: rgb(200, 255, 166);
+}
+
+h1{
+    font-family: cursive;
+    color: brown;
+
+}
+p{
+    color: brown;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+}
