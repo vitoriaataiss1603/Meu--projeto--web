@@ -1,33 +1,111 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Projeto Web</title>
-    <link rel="styleheet" href="style.css">
+    <title>Quiz para programadores</title>
 </head>
 <body>
-<header>
-    <h1 style="color: darkslateblue;">Vitória Tais dos Santos Silva</h1>
-    <img src="vitoria.jpeg" height="400" alt="minha foto">
-    <p>Aluno da Escola Estadual Professor Lima Castro</p>
-</header>  
-<main>
-    <h2 style="color: darkslateblue;">Semana 1</h2>
-    <ul>
-        <li><a href="https://www.google.com">Acesse o google</a></li>
-        <li><a href="https://www.tiktok.com/@revlyris/video/7608201193642380566?is_from_webapp=1&sender_device=pc&web_id=7661262987163911698">Acesse o TikTok</a></li>
-        <li><a href="Atv1.html">Acesse Atividade 1</a></li>
-        <li><a href="Atv2.html">Acesse Atividade 2</a></li>
-        <li><a href="Atv3.html">Acesse Atividade 3</a></li>
-        <li><a href="Atv4.html">Acesse Atividade 4</a></li>
-        <li><a href="Atv5.html">Acesse Atividade 5</a></li>
+    <header>
+        <h1>Quiz interativo para programadores</h1>
+        <p>Teste os seus conhecimentos em programação</p>
+    </header>
 
- <hr>
+    <main>
+        <!--Introdução-->
+        <section>
+        <h2>Sobre o quiz</h2>
+        <p><strong>Este quiz </strong> Foi desenvolvido para testar seus conhecimentos em programação, como <em>Linguagens de programaçao</em>, conceitos básicos e mais </p>
+        <p>Você encontrará diferentes tipos de perguntas, incluindo múltipla escolha, texto e perguntas de data, Desafie-se com este quiz</p>
+        <p>Você poderá encontrar alguns acrônimos como
+            <abbr title="HyperText Markup Language">HTML</abbr> e 
+            <abbr title="Cascading Style sheets">CSS</abbr>, que são comunente usados em questões relacionadas ao desinvolvimento web
+        </p>
+        </section>
 
-    <h2 style="color: darkslateblue;">Semana 2</h2>
-             
-     </main> 
-     <footer>Desinvolvimento web PIBIC Jr da Escola Estadual Professor Lima Castro</footer> 
+        <!--Pergunta 1: Múlttipla escolha-->
+        <section>
+            <h2>Pergunta 1: Qual linguagem para estruturar páginas web?</h2>
+            <form>
+                <input type="radio" value="Python" id="pla"
+                name="pergunta1">
+                <label for="pla">Pytohn</label><br>
+                <input type="radio" value="HTML" id="p1b"
+                name="pergunta1"
+                <label for="p1b">HTML</label><br>
+                <input type="radio" value="JavaScript"
+                id="p1c" name="pergunta1">
+                <label for="p1c">JavaScript</label><br>
+                <input type="radio" value="Ruby" id="p1d"
+                name="pergunta1">
+                <label for="p1d">Ruby</label>
+            </form>
+        </section>
+
+        <!--Pergunta2: Texto-->
+
+        <section>
+            <h2>Pergunta 2: Na URL https://ww.google.com com o trecho "google.com" é o _____________________</h2>
+            <form>
+                <input type="text" id="p2" name="pergunta2"
+                placeholder="Digite aqui sua resposta..."
+            </form>
+        </section>
+
+        <!--Pergunta3: Data-->
+        <section>
+            <h2>Pergunta 3: Em que ano o HTML lançou sua primeira versão?</h2>
+            <form>
+                <input type="date" id="p3" name="pergunta3"
+            </form>
+        </section>
+
+        <!--Pergunta4-->
+        <section>
+            <h2>Pergunta 4: Faça um upload de um arquivo</h2>
+            <form>
+                <input type="file" id="p4" name="pergunta4">
+            </form>
+        </section>
+
+        <!--Pergunta 5: Meu suspenso-->
+        <section>
+            <h2>Pergunta 5: Selecione um atributo do input que define o tipo  </h2>
+            <form>
+               <select id="p5" name="pergunta5">
+                <option value="type">type</option>
+                <option value="name">name</option>
+                <option value="id">id</option>
+                <option value="value">value</option>
+
+               </select>
+            </form>
+        </section>
+
+        <!--Nos dê seu feedback-->
+        <section>
+            <form>
+                <fieldset>
+                    <legend>Nos dê o seu feedback</legend>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome"
+                    placeholder="Digite seu nome..."><br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email"
+                    placeholder="Digite seu email..."><br>
+
+                    <label for="feedback">Feedback:</label><br>
+                    <textarea id="feedback" name="feedback"
+                    rows="4" cols="50" placeholder="Digite seu feedback"></textarea><br>
+
+                    <button onclick="alert('FEEDBACK ENVIADO!')" type="submit">Envie o feedback</button> .
+            
+
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <footer></footer>
 </body>
 </html>
